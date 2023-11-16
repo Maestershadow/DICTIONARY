@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Colors Primary */
+  --clr-primary-100: hsl(243, 100%, 62%);
+  --clr-primary-200: hsl(228, 33%, 97%);
+  --clr-primary-200-alternate: hsl(0,0%,0%);
+
+  /*Neutral */
+  --clr-neutral-100:hsl(211, 10%, 45%);
+
+  /* Font sizes */
+  --fs-100: 0.8rem;
+  --fs-150: clamp(0.8rem,5vw, 0.96rem);
+  --fs-200: 1.2rem;
+  --fs-250: 1.3rem;
+  --fs-300: 1.4rem;
+  --fs-350: 1.5rem;
+  --fs-400: 1.6rem;
+  --fs-450: 1.7rem;
+  --fs-500: 1.8rem;
+  --fs-600: 1.9rem;
+  --fs-700: 2.0rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.0rem;
+
+  --ff-alternate: 'Poppins', sans-serif;
+  --ff-def: 'Rubik', sans-serif;
+
+
+}
+
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: var(--ff-alternate);
+  font-size: var(--fs-150);
+  color: var(--clr-primary-200);
+  background-color: var(--clr-primary-200-alternate);
+  line-height: 1.3;
+  min-height: 100vh;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* make images easier to work with */
+img,
+picutre, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+.container {
+  --max-width: 1000px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding)*2));
+  margin-inline: auto;
+  height: 100%;
+}
+
+h1 {
+  font-size: var(--fs-800);
+}
+
+button {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.flex-r
+{
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+::-webkit-scrollbar
+{
+    width: .4rem;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color:transparent;
+}
+
+
+::-webkit-scrollbar-thumb
+{
+  background-color: rgba(255, 244, 244, 0.308);
+    border-radius: 100vw;
+}
+
+@media (prefers-color-scheme: light)
+{
+  :root {
+    /* Colors Primary */
+    --clr-primary-100: hsl(243, 100%, 62%);
+    --clr-primary-200: hsl(0,0%,0%);
+    --clr-primary-200-alternate: hsl(228, 33%, 97%);
+  }
+}

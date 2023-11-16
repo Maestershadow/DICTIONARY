@@ -1,0 +1,29 @@
+.word-heading-container
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.word-heading-container svg
+{
+    width: 3.5rem;
+}
+
+.word-heading-container button
+{
+    background-color: transparent;
+}
+
+.word-heading-container strong
+{
+    color: var(--clr-primary-100);
+}
+
+.word-heading-container h1
+{
+    font-weight: 700;
+    color: var(--clr-primary-200);
+    margin-block-end: 0.5rem;
+}
