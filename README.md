@@ -1,6 +1,6 @@
 # Verbum
 
-![Dictionary App Logo](./public/design/desktop.webp)
+![Dictionary App Logo](./public/design/app-image.png)
 
 Welcome to Verbum! This application allows users to search for word definitions, synonyms, and related information. It is built with React and provides a user-friendly interface for exploring the English language.
 
